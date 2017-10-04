@@ -15,4 +15,4 @@ name_box = soup.find('div', attrs={'class': 'td-excerpt'})
 
 #strip() is used to remove starting and trailing
 name = name_box.text.strip() 
-print name 
+print name.replace("Read more", "").strip()
